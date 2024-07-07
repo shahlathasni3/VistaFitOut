@@ -1,0 +1,1 @@
+web gunicorn waterproofPro.wsgi:application --log-file -

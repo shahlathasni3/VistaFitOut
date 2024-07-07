@@ -11,8 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'assets/img/vista.png' %}" rel="icon">
+  {% comment %} <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> {% endcomment %}
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -36,6 +36,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .loading, .error-message, .sent-message {
+      display: none;
+    }
+  
+  </style>
 </head>
 
 <body>
@@ -47,8 +54,9 @@
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
           {% comment %} <h1 class="logo me-auto me-lg-0"><a href="index.html">Vista Fit Out</a></h1> {% endcomment %}
+          
           <!-- Uncomment below if you prefer to use an image logo -->
-          <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+          <a href="index.html" class="logo me-auto me-lg-0"><img src="{% static "assets/img/logo.png" %}" alt="" class="img-fluid"></a>
 
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
@@ -56,7 +64,6 @@
               <li><a class="nav-link scrollto" href="#about">About</a></li>
               <li><a class="nav-link scrollto" href="#services">Services</a></li>
               <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
-              {% comment %} <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> {% endcomment %}
               
               <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             </ul>
@@ -77,7 +84,7 @@
         <div class="col-xl-8">
           <h1>Vista Fit Out & Waterproofing</h1>
           <h2>We do all maintenance, interior solutions, and waterproofing with professionalism and complete responsibility.</h2>
-          <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+          {% comment %} <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a> {% endcomment %}
         </div>
       </div>
     </div>
@@ -99,7 +106,6 @@
               We offer top-notch Commercial and Technical services that meet our clients' needs. Vista FitOut, we prioritize delivering a smooth repair experience. Our team of skilled professionals is equipped to handle various repairs, Waterproofing, electrical systems, plumbing, and more. We are prepared for jobs of any size.Our expertise extends to a wide range of construction specialties, ensuring that your projects are shielded against water damage with precision.
             </p>
             <ul>
-              {% comment %} <li><i class="ri-check-double-line"></i> Bathroom Waterproofing</li> {% endcomment %}
               
             </ul>
           </div>
@@ -109,7 +115,7 @@
                fortified against moisture intrusion while benefiting from durable industrial flooring 
                solutions tailored to your specific needs.
             </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            <a href="#services" class="btn-learn-more">Learn More</a>
           </div>
         </div>
 
@@ -128,7 +134,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <div class="icon"><i class="bx bx-water"></i></div>
               <h4><a href="">Terrace Waterproofing</a></h4>
               <p>We provide cutting-edge options for terrace waterproofing, guaranteeing enduring defense against water harm. Utilizing our cutting-edge technology and proficiency in the area, we supply dependable and efficient waterproofing options for both residential and commercial buildings.</p>
             </div>
@@ -136,7 +142,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              <div class="icon"><i class="bx bxs-factory"></i></div>
               <h4><a href="">Floor & Wall Tiles</a></h4>
               <p>Tiles that are cracked or damaged can contain dangerous germs. Tiles that are not well looked after in the kitchen and bathroom can cause a gradual leak of water, which can cause more harm to the property.
                 Our skilled and licensed civil work experts are fully prepared to correctly diagnose and solve any issues effortlessly. Our team is dedicated to applying the newest methods and using top-notch materials.</p>
@@ -145,7 +151,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <div class="icon"><i class="bx bx-paint-roll"></i></div>
               <h4><a href="">Painting</a></h4>
               <p>Achieving a beautiful home is a priority for many, but maintaining wall paint can be a constant challenge. we comprehend this struggle and have a team of skilled professionals ready to tackle it at competitive rates. Specializing in both small and large painting projects for commercial and residential spaces, we prioritize industry best practices and high-quality paints to guarantee customer contentment.</p>
             </div>
@@ -153,7 +159,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              <div class="icon"><i class="bx bxl-mastercard"></i></div>
               <h4><a href="">Plumbing</a></h4>
               <p>Plumbing problems can quickly turn into a major headache. Our skilled and trained plumbing specialists are equipped to handle a variety of tasks promptly. The Vista Fit Out plumbing team specializes in preventive maintenance, repairs, cleaning, unclogging, leak detection, and the replacement or installation of fixtures.</p>
             </div>
@@ -161,7 +167,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <div class="icon"><i class="bx bx-plug"></i></div>
               <h4><a href="">Electrical</a></h4>
               <p>Recognizing and addressing electrical problems promptly is crucial, and our team fully comprehends the gravity of these issues. Our team is committed to prioritizing safety by assigning only certified, trained, and skilled electrical technicians. Our technicians are dedicated to pinpointing issues at their root to provide lasting solutions, using high-quality products.</p>
             </div>
@@ -169,7 +175,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
+              <div class="icon"><i class="bx bx-bolt-circle"></i></div>
               <h4><a href="">A/C Maintanance</a></h4>
               <p>Our team of experts has significant experience and training in diagnosing and resolving any AC-related issues. They are fully prepared to tackle any obstacles and guarantee that the job is finished within the agreed-upon timeframe for our valued customers.</p>
             </div>
@@ -204,17 +210,17 @@
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1">
             <div class="icon-box mt-5 mt-lg-0">
-              <i class="bx bx-receipt"></i>
-              <h4>Cementitious Waterproofing</h4>
-              <p>We offer a revolutionary solution in the realm of cementitious waterproofing. With our advanced technology and proven effectiveness, </p>
+              <i class="bx bx-aperture"></i>
+              <h4>Fitout & Renovation</h4>
+              <p>Our team specializes in renovating and enhancing bathrooms to complement the overall aesthetic of the home and cater to the specific requirements of our clients. We meticulously focus on every aspect to ensure that the area is not only functional but also luxurious and stylish.</p>
             </div>
             <div class="icon-box mt-5">
               <i class="bx bx-cube-alt"></i>
-              <h4>Injection Waterproofing</h4>
-              <p>We offer cutting-edge injection waterproofing solutions that provide unparalleled protection against water damage. </p>
+              <h4>Interior Design</h4>
+              <p>At Vista Fit Out, we believe that every space has a story to tell. Our passion for interior design is fueled by the desire to transform ordinary spaces into extraordinary experiences. With a keen eye for detail and a commitment to excellence, we bring your vision to life, creating environments that reflect your personality, style, and needs. </p>
             </div>
             <div class="icon-box mt-5">
-              <i class="bx bx-images"></i>
+              <i class="bx bx-atom"></i>
               <h4>Deep Cleaning</h4>
               <p>We are offers top-notch service by providing well-trained and experienced staff to deliver optimal results. Our team comes fully equipped with the essential chemicals, tools, and equipment needed to ensure superior outcomes. Rest assured that your property will be expertly cleaned to perfection when you book our service. Simply give us a call to schedule your property cleaning today.</p>
             </div>
@@ -225,7 +231,7 @@
       </div>
     </section><!-- End Features Section -->
 
-    <!-- ======= Counts Section ======= -->
+    {% comment %} <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container">
 
@@ -259,7 +265,7 @@
         </div>
 
       </div>
-    </section><!-- End Counts Section -->
+    </section><!-- End Counts Section --> {% endcomment %}
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -296,129 +302,6 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    {% comment %} <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box recommended">
-              <span class="recommended-badge">Recommended</span>
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section --> {% endcomment %}
-
-    {% comment %} <!-- ======= Faq Section ======= -->
-    <section id="faq" class="faq">
-      <div class="container-fluid">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3>Frequently Asked <strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/faq.jpg");'>&nbsp;</div>
-        </div>
-
-      </div>
-    </section><!-- End Faq Section --> {% endcomment %}
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -448,13 +331,13 @@
               <div class="email">
                 <i class="ri-mail-line"></i>
                 <h4>Email:</h4>
-                <p>vista@gmail.com</p>
+                <p>vistafitout@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="ri-phone-line"></i>
                 <h4>Call:</h4>
-                <p>+91 7827378976</p>
+                <p>+91 8138815505</p>
               </div>
 
             </div>
@@ -463,7 +346,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form method="POST" role="form" class="php-email-form" action="{% url 'home' %}">
+            <form method="POST" role="form" class="php-email-form" action="{% url 'home' %}"  id="contactForm">
               
               {% csrf_token %}
               <div class="row">
@@ -475,9 +358,9 @@
                 </div>
               </div>
 
-                <div class="col-md-6 form-group">
-                  <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
-                </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
                 
             
               <div class="form-group mt-3">
@@ -488,7 +371,7 @@
                 <div class="error-message">error</div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>  
-              <div  class="text-center"><a href='{% url 'home'%}'><button type="submit">Send Message</button></a></div>
+              <div  class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
           </div>
@@ -503,24 +386,28 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Vista Fit Out</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      {% comment %} <h3>Vista Fit Out</h3> {% endcomment %}
+      <a href="index.html" class="logo me-auto me-lg-0"><img style="width:175px;height:70px;" src="{% static "assets/img/logo.png" %}" alt="" class="img-fluid"></a>
+
+
+
+      <p>Our dedicated facilities team are on hand to promptly attend to any building services. </p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://wa.me/918138815505" class="twitter"><i class="bx bi-whatsapp"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/vistafitout?igsh=MTg0aWhoMTQ0NTNiZA==" class="instagram"><i class="bx bxl-instagram"></i></a>
+        
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Vista Fit Out</span></strong>. All Rights Reserved
       </div>
+      
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Shahla Thasni</a>
+        Designed by <a href="https://www.linkedin.com/in/shahla-thasni?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">ShazTech</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -539,6 +426,28 @@
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
 
+  <!-- contact script -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent the default form submission
+      
+      // Show loading
+      document.querySelector('.loading').style.display = 'block';
+      document.querySelector('.error-message').style.display = 'none';
+      document.querySelector('.sent-message').style.display = 'none';
+      
+      // Simulate form submission
+      setTimeout(function() {
+        document.querySelector('.loading').style.display = 'none';
+        document.querySelector('.sent-message').style.display = 'block';
+
+        // Redirect to home.html after 2 seconds
+        setTimeout(function() {
+          location.reload();
+        }, 2000);
+      }, 2000); // Simulate a delay for the submission
+    });
+  </script>
 </body>
 
 </html>

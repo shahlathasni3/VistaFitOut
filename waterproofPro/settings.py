@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-tonf3n_r8=57&z1@f9!5)hc^i(qq9e11x07!lr1p+85y&a_p3i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "Category",
     "store",
     "contact",
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = "waterproofPro.urls"
@@ -84,10 +85,12 @@ WSGI_APPLICATION = "waterproofPro.wsgi.application"
 #         "ENGINE": "django.db.backends.sqlite3",
 #         "NAME": os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
-# 
-DATABASES = {
-    'default': dj_database_url.config(os.environ.get('DATABASE_URL'))
+# }
 
+DATABASES = {
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL')
+    )
 }
 
 # Password validation

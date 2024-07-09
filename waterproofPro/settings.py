@@ -92,11 +92,7 @@ DATABASES = {
         default=os.environ.get('DATABASE_URL')
     )
 }
-import environ
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 

@@ -1,8 +1,0 @@
-[2024-07-08 22:27:57 +0530] [20106] [INFO] Starting gunicorn 22.0.0
-[2024-07-08 22:27:57 +0530] [20106] [INFO] Listening at: http://127.0.0.1:8000 (20106)
-[2024-07-08 22:27:57 +0530] [20106] [INFO] Using worker: sync
-[2024-07-08 22:27:57 +0530] [20112] [INFO] Booting worker with pid: 20112
-[2024-07-09 09:51:24 +0530] [20106] [INFO] Handling signal: hup
-[2024-07-09 09:51:24 +0530] [20106] [INFO] Hang up: Master
-[2024-07-09 09:51:24 +0530] [20106] [ERROR] Worker (pid:20112) was sent SIGHUP!
-[2024-07-09 09:51:24 +0530] [21351] [INFO] Booting worker with pid: 21351

@@ -269,7 +269,7 @@
           {% comment %} <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> {% endcomment %}
         </div>
 
-        <div class="row">
+        {% comment %} <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               {% for category in links %}
@@ -278,9 +278,9 @@
 
             </ul>
           </div>
-        </div>
+        </div> {% endcomment %}
 
-        <div class="row portfolio-container">
+        {% comment %} <div class="row portfolio-container">
           {% for product in products %}
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <img src="{{product.images.url}}" class="img-fluid" alt="">
@@ -290,10 +290,56 @@
             </div>
           </div>
           {% endfor %}
+        </div> {% endcomment %}
+
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/products/ac.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>A/C Maintenance</h4>
+              <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class=""></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/products/cln2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Cleaning</h4>
+              <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class=""></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/products/plumber1.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Plumbing</h4>
+              <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class=""></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/products/int3.jpg.webp' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Interior</h4>
+              <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class=""></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/products/Electr2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Electrical</h4>
+              <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class=""></i></a>
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
